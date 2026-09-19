@@ -1,5 +1,31 @@
 
 header {
+    inset: 0;
     background-color: #000000;
-    
+    display: flex;
+    align-items: center;
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    /*Looked up how to add a background*/
+    background-image: url("../Assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1 {
+    font-family:cursive;
+    padding: 10px;
+}
+
+/*So based on research I should style the container, followed by the text in the container*/
+.pageTitle{
+    flex: 1; /*This makes the adaptive box fill the space of the parent*/
+    display: flex;
+    justify-content: center;
+}
+.pageTitle h1{ /*All heading type 1 text within the pagetitlebar*/
+    color: white;
+    margin: 0;
 }
